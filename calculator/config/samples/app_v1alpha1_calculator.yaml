@@ -1,0 +1,12 @@
+apiVersion: app.calculator.com/v1alpha1
+kind: Calculator
+metadata:
+  labels:
+    app.kubernetes.io/name: calculator
+    app.kubernetes.io/instance: calculator-sample
+    app.kubernetes.io/part-of: calculator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: calculator
+  name: calculator-sample
+spec:
+  # TODO(user): Add fields here

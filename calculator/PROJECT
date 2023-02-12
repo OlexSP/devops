@@ -1,0 +1,19 @@
+domain: calculator.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: calculator
+repo: git.epam.com/oleksandr_aloshchenko/edp/calculator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: calculator.com
+  group: app
+  kind: Calculator
+  path: git.epam.com/oleksandr_aloshchenko/edp/calculator/api/v1alpha1
+  version: v1alpha1
+version: "3"
